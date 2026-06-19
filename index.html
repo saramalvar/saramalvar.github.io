@@ -111,19 +111,6 @@
             product impact, and real-world adoption.
           </p>
         </div>
-        <div class="about__side">
-          <h3>Focus areas</h3>
-          <ul class="tags">
-            <li>LLM Evaluation</li>
-            <li>Benchmarking</li>
-            <li>LLM-as-a-judge</li>
-            <li>Agent Quality</li>
-            <li>RAG &amp; Fine-tuning</li>
-            <li>Trustworthy AI</li>
-            <li>MLOps</li>
-            <li>Python · PyTorch · Azure</li>
-          </ul>
-        </div>
       </div>
     </section>
 
@@ -242,40 +229,44 @@
       <a class="btn btn--primary cv__download" href="assets/SaraMalvar-Resume.pdf" target="_blank" rel="noopener">Download CV (PDF) →</a>
 
       <h3 class="cv__subhead">Experience</h3>
-      <ol class="timeline">
-        <li class="timeline__item">
-          <span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft logo" /></span>
-          <div class="timeline__body">
-            <span class="timeline__date">2024 — Now</span>
-            <h3>Senior Applied Scientist · Tech Lead, Frontier Tuning Evaluation — Microsoft</h3>
-            <p>Technical lead for AI evaluation, benchmarking, and grading infrastructure behind Microsoft 365 Frontier Tuning — Microsoft's platform for fine-tuning enterprise AI agents. Architected the evaluation backbone used across Copilot agent workflows; built grading systems for reinforcement (RFT) and supervised (SFT) fine-tuning; led LLM evaluation, calibration, hallucination detection, and trajectory-scoring. Influence product strategy and mentor scientists across the AI evaluation ecosystem.</p>
+      <div class="htimeline">
+        <article class="htl">
+          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft logo" /></span></div>
+          <span class="htl__date">2024 — Now</span>
+          <div class="htl__card">
+            <h3>Senior Applied Scientist · Tech Lead</h3>
+            <p class="htl__org">Frontier Tuning Evaluation — Microsoft</p>
+            <p>Technical lead for AI evaluation, benchmarking, and grading infrastructure behind Microsoft 365 Frontier Tuning. Architected the evaluation backbone across Copilot agent workflows; built grading for RFT &amp; SFT; led calibration, hallucination detection, and trajectory-scoring.</p>
           </div>
-        </li>
-        <li class="timeline__item">
-          <span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft logo" /></span>
-          <div class="timeline__body">
-            <span class="timeline__date">2021 — 2024</span>
-            <h3>Sr. Research Software Development Engineer — Microsoft Research</h3>
-            <p>Built AI platforms and ML solutions spanning sustainability, scientific discovery, and enterprise GenAI. Led AI solutions for Dow Chemical, ITC, Unilever, and Land O'Lakes; shipped fine-tuning, RAG, and evaluation systems adopted across customer engagements; contributed to FarmVibes.AI and large-scale geospatial AI. Inventor on multiple patents and author of peer-reviewed research.</p>
+        </article>
+        <article class="htl">
+          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft Research logo" /></span></div>
+          <span class="htl__date">2021 — 2024</span>
+          <div class="htl__card">
+            <h3>Sr. Research SDE</h3>
+            <p class="htl__org">Microsoft Research</p>
+            <p>Built AI platforms across sustainability, scientific discovery, and enterprise GenAI. Led solutions for Dow, ITC, Unilever &amp; Land O'Lakes; shipped fine-tuning, RAG, and evaluation systems; contributed to FarmVibes.AI. Inventor on multiple patents.</p>
           </div>
-        </li>
-        <li class="timeline__item">
-          <span class="logo-chip"><img src="assets/logos/rcgi.png" alt="RCGI logo" /></span>
-          <div class="timeline__body">
-            <span class="timeline__date">2019 — 2021</span>
-            <h3>Postdoctoral Researcher — Research Centre for Gas Innovation (RCGI)</h3>
-            <p>Applied ML across 6+ interdisciplinary projects at the intersection of energy, environment, and materials — deep learning for materials discovery, NLP for public-sentiment analysis, and ML-driven seismic imaging. Bridged physics-based modeling with machine learning and mentored junior researchers.</p>
+        </article>
+        <article class="htl">
+          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/rcgi.png" alt="RCGI logo" /></span></div>
+          <span class="htl__date">2019 — 2021</span>
+          <div class="htl__card">
+            <h3>Postdoctoral Researcher</h3>
+            <p class="htl__org">Research Centre for Gas Innovation</p>
+            <p>Applied ML across 6+ interdisciplinary projects in energy, environment, and materials — deep learning for materials discovery, NLP for public-sentiment analysis, and ML-driven seismic imaging. Mentored junior researchers.</p>
           </div>
-        </li>
-        <li class="timeline__item">
-          <span class="logo-chip"><img src="assets/logos/udacity.svg" alt="Udacity logo" /></span>
-          <div class="timeline__body">
-            <span class="timeline__date">2018 — 2024</span>
-            <h3>Data Science &amp; ML Instructor — Udacity, Data Science Dojo, Awari, Alura</h3>
-            <p>Taught and mentored 300+ students across four platforms, including 1:1 mentorship across 9 Udacity nanodegrees and live webinars. Top-rated mentor on MentorCruise for coaching on LLMs and applied AI.</p>
+        </article>
+        <article class="htl">
+          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/udacity.svg" alt="Udacity logo" /></span></div>
+          <span class="htl__date">2018 — 2024</span>
+          <div class="htl__card">
+            <h3>Data Science &amp; ML Instructor</h3>
+            <p class="htl__org">Udacity · Data Science Dojo · Awari</p>
+            <p>Taught and mentored 300+ students across four platforms, including 1:1 mentorship across 9 Udacity nanodegrees and live webinars. Top-rated mentor on MentorCruise for LLMs and applied AI.</p>
           </div>
-        </li>
-      </ol>
+        </article>
+      </div>
 
       <h3 class="cv__subhead">Education</h3>
       <div class="edu">
@@ -284,40 +275,40 @@
             <span class="logo-chip"><img src="assets/logos/upenn.svg" alt="University of Pennsylvania logo" /></span>
             <span class="logo-chip"><img src="assets/logos/usp.svg" alt="University of São Paulo logo" /></span>
           </div>
-          <div>
+          <div class="edu__body">
+            <span class="edu__years">2015 — 2019</span>
             <h3>Ph.D. in Applied Sciences</h3>
             <p>University of Pennsylvania &amp; University of São Paulo</p>
-            <span class="edu__years">2015 — 2019</span>
           </div>
         </article>
         <article class="edu__card">
           <div class="edu__logos">
             <span class="logo-chip"><img src="assets/logos/tokyo.svg" alt="University of Tokyo logo" /></span>
           </div>
-          <div>
-            <h3>Ph.D. Visiting Researcher</h3>
-            <p>University of Tokyo (SELA Scholarship)</p>
+          <div class="edu__body">
             <span class="edu__years">2018</span>
+            <h3>Ph.D. Visiting Researcher</h3>
+            <p>University of Tokyo · SELA Scholarship</p>
           </div>
         </article>
         <article class="edu__card">
           <div class="edu__logos">
             <span class="logo-chip"><img src="assets/logos/unb.svg" alt="University of Brasília logo" /></span>
           </div>
-          <div>
-            <h3>M.Sc. in Applied Sciences</h3>
-            <p>University of Brasília (EMBRAER Best Dissertation Award)</p>
+          <div class="edu__body">
             <span class="edu__years">2014 — 2015</span>
+            <h3>M.Sc. in Applied Sciences</h3>
+            <p>University of Brasília · EMBRAER Best Dissertation Award</p>
           </div>
         </article>
         <article class="edu__card">
           <div class="edu__logos">
             <span class="logo-chip"><img src="assets/logos/unb.svg" alt="University of Brasília logo" /></span>
           </div>
-          <div>
-            <h3>B.Sc. in Electrical Engineering</h3>
-            <p>University of Brasília (Graduated with honors)</p>
+          <div class="edu__body">
             <span class="edu__years">2009 — 2013</span>
+            <h3>B.Sc. in Electrical Engineering</h3>
+            <p>University of Brasília · Graduated with honors</p>
           </div>
         </article>
       </div>
