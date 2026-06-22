@@ -224,6 +224,7 @@ a.patent__title:hover { color: var(--accent); }
   border: 1px solid rgba(17, 21, 31, 0.10); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
 }
 .logo-chip img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+.logo-chip--text { color: #11151f; font: 800 0.82rem/1 var(--font-display); letter-spacing: 0.04em; }
 
 /* timeline slider */
 .experience-slider { position: relative; margin-bottom: 8px; }
