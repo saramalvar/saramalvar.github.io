@@ -13,7 +13,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://saramalvar.github.io/" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
@@ -81,7 +80,6 @@
     <!-- ABOUT -->
     <section id="about" class="section container">
       <div class="section__head">
-        <span class="section__num">01</span>
         <h2>About</h2>
       </div>
       <div class="about">
@@ -117,7 +115,6 @@
     <!-- PUBLICATIONS -->
     <section id="publications" class="section container">
       <div class="section__head">
-        <span class="section__num">02</span>
         <h2>Publications</h2>
       </div>
       <ol class="pubs" reversed>
@@ -152,7 +149,6 @@
     <!-- PATENTS -->
     <section id="patents" class="section container">
       <div class="section__head">
-        <span class="section__num">03</span>
         <h2>Patents</h2>
       </div>
       <div class="patents-group">
@@ -220,70 +216,89 @@
       </div>
     </section>
 
-    <!-- CV -->
+    <!-- EXPERIENCE -->
     <section id="cv" class="section container">
       <div class="section__head">
-        <span class="section__num">04</span>
-        <h2>Experience &amp; CV</h2>
+        <h2>Experience</h2>
       </div>
       <a class="btn btn--primary cv__download" href="assets/SaraMalvar-Resume.pdf" target="_blank" rel="noopener">Download CV (PDF) →</a>
 
-      <h3 class="cv__subhead">Experience</h3>
-      <div class="htimeline htimeline--expanded">
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft logo" /></span></div>
-          <span class="htl__date">2024 — Now</span>
-          <div class="htl__card">
-            <h3>Senior Applied Scientist · Tech Lead</h3>
-            <p class="htl__org">Frontier Tuning Evaluation — Microsoft</p>
-            <p>Technical lead for AI evaluation, benchmarking, and grading infrastructure behind Microsoft 365 Frontier Tuning. Architected the evaluation backbone across Copilot agent workflows; built grading for RFT &amp; SFT; led calibration, hallucination detection, and trajectory-scoring.</p>
+      <div class="experience-slider" data-experience-slider>
+        <div class="experience-slider__top">
+          <h3 class="cv__subhead">Professional timeline</h3>
+          <div class="experience-slider__controls" aria-label="Experience timeline controls">
+            <button class="timeline-btn" type="button" data-slider-prev aria-label="Previous experience">←</button>
+            <button class="timeline-btn" type="button" data-slider-next aria-label="Next experience">→</button>
           </div>
-        </article>
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft Research logo" /></span></div>
-          <span class="htl__date">2021 — 2024</span>
-          <div class="htl__card">
-            <h3>Sr. Research SDE</h3>
-            <p class="htl__org">Microsoft Research</p>
-            <p>Built AI platforms across sustainability, scientific discovery, and enterprise GenAI. Led solutions for Dow, ITC, Unilever &amp; Land O'Lakes; shipped fine-tuning, RAG, and evaluation systems; contributed to FarmVibes.AI. Inventor on multiple patents.</p>
+        </div>
+        <div class="experience-slider__viewport" tabindex="0" aria-label="Scrollable experience timeline">
+          <div class="experience-slider__track">
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft logo" /></span></div>
+              <span class="experience-slide__date">Sep 2024 — Present</span>
+              <div class="experience-slide__card">
+                <h3>M365 Sr. AI Applied Scientist</h3>
+                <p class="experience-slide__org">Microsoft</p>
+                <p>Leads LLM evaluation for Copilot Tuning / Frontier Copilot. Architected agent-agnostic LLM-as-a-judge infrastructure, grader APIs for RFT/SFT, calibration systems, hallucination and PII-leakage detection, and trajectory scoring.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/microsoft.svg" alt="Microsoft Research logo" /></span></div>
+              <span class="experience-slide__date">Aug 2021 — Sep 2024</span>
+              <div class="experience-slide__card">
+                <h3>Research Software Development Engineer</h3>
+                <p class="experience-slide__org">Microsoft Research</p>
+                <p>Co-built FarmVibes.AI / TerraVibes and led geospatial AI, LLM fine-tuning, RAG, and enterprise R&amp;D workstreams. Shipped Azure ML pipelines and produced patents and peer-reviewed research.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/rcgi-mark.png" alt="RCGI logo" /></span></div>
+              <span class="experience-slide__date">Jul 2019 — Aug 2021</span>
+              <div class="experience-slide__card">
+                <h3>Postdoctoral Researcher</h3>
+                <p class="experience-slide__org">Research Centre for Gas Innovation</p>
+                <p>Applied ML across energy, environment, and materials research: materials discovery, NLP for energy-policy sentiment, seismic imaging, sensor data, and bioprocess optimization. Mentored junior researchers.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/ibm.svg" alt="IBM logo" /></span></div>
+              <span class="experience-slide__date">Pre-2019</span>
+              <div class="experience-slide__card">
+                <h3>AI &amp; Data Science Work</h3>
+                <p class="experience-slide__org">IBM</p>
+                <p>Worked on applied data science and AI initiatives before Microsoft, building experience across analytics, machine learning, and industry-facing technical problem solving.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/udacity.svg" alt="Udacity logo" /></span></div>
+              <span class="experience-slide__date">2018 — Aug 2024</span>
+              <div class="experience-slide__card">
+                <h3>Data Science &amp; ML Instructor</h3>
+                <p class="experience-slide__org">Udacity · Data Science Dojo · Awari · Alura</p>
+                <p>Taught and mentored 300+ students and professionals across ML, deep learning, applied LLMs, and 9 Udacity nanodegrees, plus live webinars and cohort-based instruction.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/upenn.svg" alt="University of Pennsylvania logo" /></span></div>
+              <span class="experience-slide__date">2015 — 2019</span>
+              <div class="experience-slide__card">
+                <h3>Ph.D. Researcher</h3>
+                <p class="experience-slide__org">University of Pennsylvania · University of São Paulo</p>
+                <p>Advanced machine learning and computational research across applied-science problems, bridging academic rigor with production-oriented modeling practices and cross-institution collaboration.</p>
+              </div>
+            </article>
+            <article class="experience-slide">
+              <div class="experience-slide__marker"><span class="logo-chip"><img src="assets/logos/tokyo.svg" alt="University of Tokyo logo" /></span></div>
+              <span class="experience-slide__date">2018</span>
+              <div class="experience-slide__card">
+                <h3>Visiting Researcher</h3>
+                <p class="experience-slide__org">University of Tokyo · SELA Scholarship</p>
+                <p>Conducted international doctoral research in a highly collaborative academic environment, extending the technical depth and global scope of her applied-science research agenda.</p>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/rcgi-mark.png" alt="RCGI logo" /></span></div>
-          <span class="htl__date">2019 — 2021</span>
-          <div class="htl__card">
-            <h3>Postdoctoral Researcher</h3>
-            <p class="htl__org">Research Centre for Gas Innovation</p>
-            <p>Applied ML across 6+ interdisciplinary projects in energy, environment, and materials — deep learning for materials discovery, NLP for public-sentiment analysis, and ML-driven seismic imaging. Mentored junior researchers.</p>
-          </div>
-        </article>
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/udacity.svg" alt="Udacity logo" /></span></div>
-          <span class="htl__date">2018 — 2024</span>
-          <div class="htl__card">
-            <h3>Data Science &amp; ML Instructor</h3>
-            <p class="htl__org">Udacity · Data Science Dojo · Awari</p>
-            <p>Taught and mentored 300+ students across four platforms, including 1:1 mentorship across 9 Udacity nanodegrees and live webinars. Top-rated mentor on MentorCruise for LLMs and applied AI.</p>
-          </div>
-        </article>
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/upenn.svg" alt="University of Pennsylvania logo" /></span></div>
-          <span class="htl__date">2015 — 2019</span>
-          <div class="htl__card">
-            <h3>Ph.D. Researcher</h3>
-            <p class="htl__org">University of Pennsylvania · University of São Paulo</p>
-            <p>Advanced machine learning and computational research across applied-science problems, bridging academic rigor with production-oriented modeling practices and cross-institution collaboration.</p>
-          </div>
-        </article>
-        <article class="htl">
-          <div class="htl__marker"><span class="logo-chip"><img src="assets/logos/tokyo.svg" alt="University of Tokyo logo" /></span></div>
-          <span class="htl__date">2018</span>
-          <div class="htl__card">
-            <h3>Visiting Researcher</h3>
-            <p class="htl__org">University of Tokyo · SELA Scholarship</p>
-            <p>Conducted international doctoral research in a highly collaborative academic environment, extending the technical depth and global scope of her applied-science research agenda.</p>
-          </div>
-        </article>
+        </div>
+        <div class="experience-slider__dots" data-slider-dots aria-label="Experience timeline pagination"></div>
       </div>
 
       <h3 class="cv__subhead">Education</h3>
@@ -335,7 +350,6 @@
     <!-- MENTORING -->
     <section id="mentoring" class="section container">
       <div class="section__head">
-        <span class="section__num">05</span>
         <h2>Mentoring</h2>
       </div>
       <div class="mentoring">
@@ -369,29 +383,47 @@
       <div class="testimonials__intro">
         <span>Selected public MentorCruise reviews</span>
       </div>
-      <div class="testimonials">
-        <figure class="testimonial">
-          <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>Sara was an absolutely fantastic mentor. She is a true expert in machine learning and RAG systems and went above and beyond in helping me not only work through seemingly impossible engineering constraints, but pushing a project to completion. I have had several mentors on MentorCruise and various other platforms, and so far, she is the best ML mentor I ever had. I cannot recommend her enough!</blockquote>
-          <figcaption><span class="testimonial__name">Francis</span><span class="testimonial__role">Pro Plan · MentorCruise</span></figcaption>
-        </figure>
-        <figure class="testimonial">
-          <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>Sara is a great mentor. If you want to understand the whole LLM and AI engineering space you're in good hands. She really knows her way around the whole prompt engineering, RAG, evaluations and agents pipeline. It's a great feeling that I (as a PM) can explain all the parts of a RAG system to engineers and how to evaluate them.</blockquote>
-          <figcaption><span class="testimonial__name">Maximilian</span><span class="testimonial__role">Product Manager · MentorCruise</span></figcaption>
-        </figure>
-        <figure class="testimonial">
-          <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>Sara is an excellent mentor with deep knowledge in her field. Even though we only worked together for two months, she quickly understood where I was and pointed me in the right direction. She's insightful, responsive, and genuinely invested in helping her mentees grow. Highly recommend!</blockquote>
-          <figcaption><span class="testimonial__name">Angel</span><span class="testimonial__role">Standard Plan · MentorCruise</span></figcaption>
-        </figure>
+      <div class="reviews-carousel" data-reviews-carousel aria-label="Selected public MentorCruise reviews" aria-roledescription="carousel">
+        <div class="reviews-carousel__viewport">
+          <div class="testimonials reviews-carousel__track">
+            <figure class="testimonial reviews-carousel__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Sara is a great mentor overall. I basically came in with no knowledge on LLMs, AI agents, RAG etc. With her I got my first retrieval mechanism work, created a Q/A dataset and started using observability platforms. Very happy how it went.</blockquote>
+              <figcaption><span class="testimonial__name">Maximilian</span><span class="testimonial__role">Mentee for 1 year · MentorCruise</span></figcaption>
+            </figure>
+            <figure class="testimonial reviews-carousel__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Sara is a great mentor. If you want to understand the whole LLM and AI engineering space you're in good hands. She really knows her way around the whole prompt engineering, RAG, evaluations and agents pipeline. It's a great feeling that I (as a PM) can explain all the parts of a RAG system to engineers and how to evaluate them.</blockquote>
+              <figcaption><span class="testimonial__name">Maximilian</span><span class="testimonial__role">Product Manager · MentorCruise</span></figcaption>
+            </figure>
+            <figure class="testimonial reviews-carousel__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Sara is a fantastic mentor. She clearly knows here stuff in ML and especially generative AI and helped me deliver a complex project all the way to its completion. She is patient, accommodating, and clearly skilled. I highly recommend her!</blockquote>
+              <figcaption><span class="testimonial__name">Francis</span><span class="testimonial__role">Pro Plan · MentorCruise</span></figcaption>
+            </figure>
+            <figure class="testimonial reviews-carousel__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Sara was an absolutely fantastic mentor. She is a true expert in machine learning and RAG systems and went above and beyond in helping me not only work through seemingly impossible engineering constraints, but pushing a project to completion. I have had several mentors on MentorCruise and various other platforms, and so far, she is the best ML mentor I ever had. I cannot recommend her enough!</blockquote>
+              <figcaption><span class="testimonial__name">Francis</span><span class="testimonial__role">Pro Plan · MentorCruise</span></figcaption>
+            </figure>
+            <figure class="testimonial reviews-carousel__slide">
+              <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Sara is an excellent mentor with deep knowledge in her field. Even though we only worked together for two months, she quickly understood where I was and pointed me in the right direction. She's insightful, responsive, and genuinely invested in helping her mentees grow. Highly recommend!</blockquote>
+              <figcaption><span class="testimonial__name">Angel</span><span class="testimonial__role">Standard Plan · MentorCruise</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="reviews-carousel__controls" aria-label="Review carousel controls">
+          <button class="reviews-carousel__button" type="button" data-review-prev aria-label="Show previous review">←</button>
+          <div class="reviews-carousel__dots" data-review-dots aria-label="Choose a review"></div>
+          <button class="reviews-carousel__button" type="button" data-review-next aria-label="Show next review">→</button>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section container">
       <div class="section__head">
-        <span class="section__num">06</span>
         <h2>Get in touch</h2>
       </div>
       <p class="contact__lead">
