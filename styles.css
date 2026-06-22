@@ -287,18 +287,16 @@ a.patent__title:hover { color: var(--accent); }
   scrollbar-width: none; padding: 6px 2px 8px;
 }
 .experience-slider__viewport::-webkit-scrollbar { display: none; }
-.experience-slider__viewport::before {
-  content: ""; position: absolute; top: 65px; left: 30px; right: 30px; height: 2px;
-  border-radius: 3px; background: linear-gradient(90deg,
-    transparent,
-    color-mix(in srgb, var(--accent) 38%, var(--border)),
-    transparent);
-  pointer-events: none;
-}
 .experience-slider__track {
   --slide-width: min(76vw, 430px);
   display: grid; grid-auto-flow: column; grid-auto-columns: var(--slide-width);
   gap: 26px; position: relative; align-items: stretch; padding-top: 28px;
+}
+.experience-slider__track::before {
+  content: ""; position: absolute; top: 58px; left: 31px;
+  right: calc(var(--slide-width) - 31px); height: 2px; border-radius: 3px;
+  background: color-mix(in srgb, var(--accent) 32%, var(--border));
+  pointer-events: none; z-index: 0;
 }
 .experience-slide {
   position: relative; display: flex; flex-direction: column; align-items: flex-start;
