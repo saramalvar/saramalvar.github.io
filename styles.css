@@ -324,6 +324,13 @@ a.patent__title:hover { color: var(--accent); }
 .experience-slide__card p { color: var(--text-soft); font-size: 0.89rem; line-height: 1.55; }
 .experience-slide__bullets { list-style: disc; padding-left: 18px; margin-top: 10px; color: var(--text-soft); }
 .experience-slide__bullets li { margin-bottom: 6px; font-size: 0.86rem; line-height: 1.45; }
+/* slim card marking a promotion within the same team, so scope isn't repeated */
+.experience-slide__card--slim {
+  min-height: 0; border-style: dashed;
+  background: color-mix(in srgb, var(--card) 60%, transparent);
+}
+.experience-slide__card p.promo-note { font-size: 0.83rem; margin-top: 8px; }
+.promo-note strong { color: var(--accent); font-weight: 600; }
 .experience-slider__dots { display: flex; justify-content: center; gap: 9px; margin-top: 18px; }
 .experience-slider__dot {
   width: 10px; height: 10px; border-radius: 50%; border: 0; background: var(--border);
